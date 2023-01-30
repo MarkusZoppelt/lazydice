@@ -11,7 +11,7 @@ impl WordList {
 }
 
 pub fn get_wordlist() -> WordList {
-    let wordlist = WordList {
+    WordList {
         map: [
             (11111, "abacus".to_string()),
             (11112, "abdomen".to_string()),
@@ -7789,10 +7789,9 @@ pub fn get_wordlist() -> WordList {
             (66664, "zoologist".to_string()),
             (66665, "zoology".to_string()),
             (66666, "zoom".to_string()),
-       ]
+        ]
         .iter()
         .cloned()
         .collect(),
-    };
-    wordlist
+    }
 }
